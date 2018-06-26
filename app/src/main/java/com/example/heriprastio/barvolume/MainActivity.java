@@ -46,31 +46,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
-        if (v.getId() == R.id.btn_calculate){
-            String length = edtLength.getText().toString().trim();
-            String width = edtWidth.getText().toString().trim();
-            String height = edtHeight.getText().toString().trim();
-            boolean isEmptyField = false;
-            if (TextUtils.isEmpty(length)){
-                isEmptyField = true;
-                edtLength.setError("Field ini tak boleh kosong");
-            }
-            if (TextUtils.isEmpty(width)){
-                isEmptyField = true;
-                edtWidth.setError("Field ini tak boleh kosong") ;
-            }
-            if (TextUtils.isEmpty(height)){
-                isEmptyField = true;
-                edtHeight.setError("Field ini tak boleh kosong");
-            }
-            if (!isEmptyField){
-                double l = Double.parseDouble(length);
-                double w = Double.parseDouble(width);
-                double h = Double.parseDouble(height);
-                double volume = l * w * h;
-                tvResult.setText(String.valueOf(volume));
-            }
+        switch (v.getId()){
+            case R.id.btn_calculate:
+                    String length = edtLength.getText().toString().trim();
+                    String width = edtWidth.getText().toString().trim();
+                    String height = edtHeight.getText().toString().trim();
+                    boolean isEmptyField = false;
+                    if (TextUtils.isEmpty(length)){
+                        isEmptyField = true;
+                        edtLength.setError("Field ini tak boleh kosong");
+                    }
+                    if (TextUtils.isEmpty(width)){
+                        isEmptyField = true;
+                        edtWidth.setError("Field ini tak boleh kosong") ;
+                    }
+                    if (TextUtils.isEmpty(height)){
+                        isEmptyField = true;
+                        edtHeight.setError("Field ini tak boleh kosong");
+                    }
+                    if (!isEmptyField){
+                        double l = Double.parseDouble(length);
+                        double w = Double.parseDouble(width);
+                        double h = Double.parseDouble(height);
+                        double volume = l * w * h;
+                        tvResult.setText(String.valueOf(volume));
+                    }
+            case R.id.btnmove:
+                Intent move = new Intent(MainActivity.this, MainActivityIntent.class);
+                startActivity(move);
         }
     }
 }
