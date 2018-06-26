@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         double volume = l * w * h;
                         tvResult.setText(String.valueOf(volume));
                     }
+                    break;
             case R.id.btnmove:
                 Intent move = new Intent(MainActivity.this, MainActivityIntent.class);
                 startActivity(move);
