@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BarVolume</string>
+    <string name="panjang">Panjang</string>
+    <string name="lbr">Lebar</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="htng">Hitung</string>
+    <string name="hsl">Hasil</string>
+    <string name="pindAct">Pindah Activity</string>
+</resources>
