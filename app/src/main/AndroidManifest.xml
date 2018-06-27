@@ -16,7 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".intent.MainActivityIntent"></activity>
+        <activity
+            android:name=".intent.MainActivityIntent"
+            android:label="@string/Inte"
+            android:theme="@style/Inten" />
+        <activity
+            android:name=".intent.MoveWithDataActivity"
+            android:label="@string/tampildata"
+            android:theme="@style/Inten" />
+        <activity android:name=".intent.MoveWithObjectActivity"></activity>
     </application>
 
 </manifest>

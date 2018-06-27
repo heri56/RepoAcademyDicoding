@@ -6,4 +6,10 @@
     <string name="htng">Hitung</string>
     <string name="hsl">Hasil</string>
     <string name="pindAct">Pindah Activity</string>
+    <string name="pindahactdata">Pindah Activity Dengan Data</string>
+    <string name="datadi">Data Diterima</string>
+    <string name="Inte">Intent</string>
+    <string name="tampildata">Tampil Hasil Data Intent</string>
+    <string name="pindActDenganObject">Pindah Activity dengan Object</string>
+    <string name="objrec">Object Received</string>
 </resources>
